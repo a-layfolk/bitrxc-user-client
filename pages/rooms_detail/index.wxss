@@ -1,0 +1,83 @@
+page {
+  height: 100%;
+}
+.rooms-detail {
+  height: 100%;
+  background-color: #ffffff;
+}
+.rooms-detail .detail-swiper swiper {
+  width: 750rpx;
+  height: 340rpx;
+}
+.rooms-detail .detail-swiper swiper image {
+  width: 100%;
+}
+.rooms-detail .room-introduction {
+  background-color: #aaebcf;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-top: 50rpx;
+}
+.rooms-detail .room-introduction .title {
+  font-size: 40rpx;
+  font-weight: 600;
+  color: #0366d6;
+  padding: 10rpx;
+}
+.rooms-detail .room-introduction .body {
+  padding: 10rpx;
+}
+.rooms-detail .order-info {
+  margin-top: 50rpx;
+  background-color: #aaebcf;
+  /* 自定义表格的样式 */
+}
+.rooms-detail .order-info .title {
+  font-size: 40rpx;
+  font-weight: 600;
+  color: #0366d6;
+  padding: 10rpx;
+}
+.rooms-detail .order-info .table {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.rooms-detail .order-info .table .tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 80rpx;
+  align-items: center;
+}
+.rooms-detail .order-info .table .tr .th {
+  width: 40%;
+  justify-content: center;
+  text-align: center;
+}
+.rooms-detail .order-info .table .tr .td {
+  width: 40%;
+  justify-content: center;
+  text-align: center;
+}
+.rooms-detail .order-info .table .bg-w {
+  background: snow;
+}
+.rooms-detail .order-info .table .bg-g {
+  background: #aaebcf;
+}
+.rooms-detail .section {
+  background-color: #aaebcf;
+  margin-top: 50rpx;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.rooms-detail .section .section-title {
+  font-size: 40rpx;
+  font-weight: 600;
+  color: #0366d6;
+  padding: 10rpx;
+}
+.rooms-detail .section .picker {
+  padding: 10rpx;
+}
+.rooms-detail .submit-btn {
+  margin-top: 50rpx;
+}

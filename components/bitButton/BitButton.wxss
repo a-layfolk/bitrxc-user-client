@@ -1,0 +1,6 @@
+.bit-button {
+  padding: 10rpx;
+}
+.bit-button button {
+  width: 60%;
+}

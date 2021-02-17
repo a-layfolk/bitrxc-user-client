@@ -1,0 +1,38 @@
+<view class="bit-cates">
+  <view class="cates-container">
+    <!-- 左侧菜单 -->
+    <scroll-view scroll-y class="left-menu">
+      <view 
+        class="menu-item {{index === currentIndex ? 'active-menu-item' : ''}}"
+        wx:for="{{leftMenuList}}"
+        wx:key="*this"
+        bindtap="handleItemTap"
+        data-index="{{index}}"
+      >
+        {{item}}
+      </view>
+    </scroll-view>
+
+    <scroll-view scroll-y class="right-menu">
+      <view 
+        class="child-group"
+        wx:for="{{rightMenuList}}"
+        wx:for-item="item"
+        wx:for-index="index"
+      >
+        <navigator url="/pages/rooms_detail/index?room_id={{item.room_id}}">
+          <view class="child-name">
+            {{item.room_name}}
+          </view>
+          <view class="child-img-box">
+            <image class="child-img" src="../../icons/house.png" mode="withFix" />
+          </view>
+        </navigator>
+      </view>
+        
+    </scroll-view>
+      
+      
+    <!-- 右侧房间内容 -->
+  </view>
+</view>

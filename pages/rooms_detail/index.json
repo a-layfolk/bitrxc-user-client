@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "BitButton": "../../components/bitButton/BitButton"
+  },
+  "navigationBarTitleText": "房间详情"
+}

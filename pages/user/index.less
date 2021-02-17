@@ -1,0 +1,66 @@
+.user-info-wrap {
+
+  height: 45vh;
+  overflow: hidden;
+  background-color: #aaebcf;
+
+  .user-img-wrap {
+    
+    position: absolute;
+    .user-bg {
+      height: 45vh;
+      // 高斯模糊
+      filter: blur(10rpx);
+    }
+
+    .user-info {
+      // 绝对定位实现水平居中
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+
+      top: 10%;
+      text-align: center;
+
+      .user-icon {
+        width: 150rpx;
+        height: 150rpx;
+        border-radius: 50%;
+      }
+
+      .user-name {
+        color: #ffffff;
+        font-size: 40rpx;
+        font-weight: 600;
+
+        margin-top: 40rpx;
+      }
+    }
+  }
+
+  .user-btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: #aaebcf;
+    color: #ffffff;
+    font-size: 50rpx;
+    padding: 20rpx;
+  }
+
+  .app-info-wrap {
+    position: absolute;
+    margin-top: 50vh;
+    width: 100%;
+    background-color: #f5f5f5;
+  }
+
+  .app-info-item {
+    width: 100%;
+    padding: 20rpx;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+}

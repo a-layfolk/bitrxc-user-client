@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/category/index",
+    "pages/rooms_detail/index",
+    "pages/cart/index",
+    "pages/order/index",
+    "pages/user/index",
+    "pages/login/index",
+    "pages/empower/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "睿信空间小程序",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#2c974b",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icons/home.png",
+        "selectedIconPath": "icons/home_active.png"
+      },
+      {
+        "pagePath": "pages/category/index",
+        "text": "分类",
+        "iconPath": "icons/category.png",
+        "selectedIconPath": "icons/category_active.png"
+      },
+      {
+        "pagePath": "pages/order/index",
+        "text": "订单",
+        "iconPath": "icons/order.png",
+        "selectedIconPath": "icons/order_active.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "我",
+        "iconPath": "icons/me.png",
+        "selectedIconPath": "icons/me_active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap99.json"
+}

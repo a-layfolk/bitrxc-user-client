@@ -1,0 +1,54 @@
+page {
+  height: 100%;
+}
+
+.bit-cates {
+  height: 100%;
+
+  .cates-container {
+    height: 100%;
+    display: flex;
+    background-color: #ffffff;
+
+    .left-menu {
+      flex: 2;
+      background-color: #ffffff;
+      
+      .menu-item {
+        height: 80rpx;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30rpx;
+
+        color: #0366d6;
+        background-color: #ebedf0;
+        border: 1px solid rgba(168, 168, 168, 0.1);
+        border-radius: 5px;
+      }
+
+      .active-menu-item {
+        background-color: #aaebcf;
+      }
+    }
+
+    .right-menu {
+      flex: 5;
+      .child-group {
+        border: 1px solid rgba(0, 0, 0, 0.2);
+
+        .child-name {
+          font-size: 40rpx;
+          text-align: center;
+        }
+
+        .child-img-box {
+
+          .child-img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

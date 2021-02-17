@@ -1,0 +1,35 @@
+<view class="user-info-wrap">
+
+  <!-- 顶部用户头像部分 -->
+  <view 
+    class="user-img-wrap"
+    wx:if="{{userInfo.avatarUrl}}"
+  >
+    <image class="user-bg" src="../../icons/background.png" />
+    <view class="user-info">
+      <image class="user-icon" src="{{userInfo.avatarUrl}}" />
+      <view class="user-name">
+        {{userInfo.nickName}}
+      </view>
+    </view>
+  </view>
+  <view wx:else class="user-btn">
+    <navigator url="/pages/empower/index">
+      授权
+    </navigator>
+  </view>
+
+  <!-- 应用信息 -->
+  <view class="app-info-wrap">
+    <view class="app-info-item">
+      联系管理员
+    </view>
+    <view class="app-info-item">
+      关于我们
+    </view>
+    <view class="app-info-item">
+      反馈意见
+    </view>
+  </view>
+
+</view>

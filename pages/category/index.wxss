@@ -1,0 +1,42 @@
+page {
+  height: 100%;
+}
+.bit-cates {
+  height: 100%;
+}
+.bit-cates .cates-container {
+  height: 100%;
+  display: flex;
+  background-color: #ffffff;
+}
+.bit-cates .cates-container .left-menu {
+  flex: 2;
+  background-color: #ffffff;
+}
+.bit-cates .cates-container .left-menu .menu-item {
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+  color: #0366d6;
+  background-color: #ebedf0;
+  border: 1px solid rgba(168, 168, 168, 0.1);
+  border-radius: 5px;
+}
+.bit-cates .cates-container .left-menu .active-menu-item {
+  background-color: #aaebcf;
+}
+.bit-cates .cates-container .right-menu {
+  flex: 5;
+}
+.bit-cates .cates-container .right-menu .child-group {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.bit-cates .cates-container .right-menu .child-group .child-name {
+  font-size: 40rpx;
+  text-align: center;
+}
+.bit-cates .cates-container .right-menu .child-group .child-img-box .child-img {
+  width: 100%;
+}

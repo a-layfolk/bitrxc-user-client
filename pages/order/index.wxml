@@ -1,0 +1,12 @@
+<view class="order-wrap">
+  <view 
+    class="order-array"
+    wx:for="{{orderList}}"
+  >
+    <view class="order-array-item">订单编号: {{item.order_id}}</view>
+    <view class="order-array-item">房间编号: {{item.room_id}}</view>
+    <view class="order-array-item">预约日期: {{item.order_day}}</view>
+    <view class="order-array-item">预约时间: {{item.order_time}}</view>
+    <view class="order-array-item">预约人: {{item.order_user}}</view>
+  </view>
+</view>

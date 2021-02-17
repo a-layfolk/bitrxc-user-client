@@ -1,0 +1,70 @@
+<view class="rooms-detail">
+  <view class="detail-swiper">
+    <!-- 轮播图 -->
+    <swiper
+      autoplay 
+      indicator-dots
+      indicator-active-color="rgba(44, 151, 75, 0.8)" 
+      circular
+    >
+      <swiper-item
+        wx:for="{{roomInfo.room_imgs}}"
+      >
+        <image class="" src="{{item.img_url}}" mode="widthFix" />
+      </swiper-item>
+    </swiper>
+
+    <!-- 房间介绍 -->
+    <view class="room-introduction">
+      <view class="title">
+        房间详情
+      </view>
+      <view class="body">
+        {{roomInfo.room_introduction}}
+      </view>
+    </view>
+
+    <!-- 房间预约信息 -->
+    <view class="order-info">
+      <view class="title">
+        各时间段的房间状态
+      </view>
+      <view class="table">
+        <view class="tr bg-w">
+          <view class="th">时间</view>
+          <view class="th">状态</view>
+        </view>
+        <block wx:for="{{roomInfo.room_time}}" wx:key="{item.time}">
+          <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+            <view class="td">{{item.time}}</view>
+            <view class="td">{{item.status}}</view>
+          </view>
+          <view class="tr" wx:else>
+            <view class="td">{{item.time}}</view>
+            <view class="td">{{item.status}}</view>
+          </view>
+        </block>
+      </view>
+    </view>
+
+    <!-- 房间预约滚轮组件 -->
+    <view class="section">
+      <view class="section-title">选择明天的预约时间</view>
+      <picker 
+        bindchange="bindPickerChange" 
+        value="{{index}}" 
+        range="{{array}}"
+      >
+        <view class="picker">
+          点击选择：{{array[index]}}
+        </view>
+      </picker>
+    </view>
+
+    <!-- 提交按钮 -->
+    <view class="submit-btn">
+      <BitButton>提交</BitButton>
+    </view>
+  </view>
+</view>
+  
